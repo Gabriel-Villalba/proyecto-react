@@ -35,6 +35,7 @@ const CardProductos = ({ data, addToCart, addToFav }) => {
       onMouseEnter={(e) => showButton(e)}
       onMouseLeave={(e) => hideButton(e)}
       sx={{
+        padding: "auto",
         maxWidth: 345,
         color: "#ffff",
         maxHeight: 600,
@@ -78,7 +79,7 @@ const CardProductos = ({ data, addToCart, addToFav }) => {
         </Typography>
         <Typography variant="body2" color="rgba(247, 98, 5, 1)">
           {[...Array(rating)].map((index) => (
-            <FaStar id={index + 1} key={index} />
+            <FaStar id={index} key={index} />
           ))}
         </Typography>
       </CardContent>
@@ -91,7 +92,7 @@ const CardProductos = ({ data, addToCart, addToFav }) => {
           justifyContent: "space-between",
         }}
       >
-        <button onClick={() => addToCart(data)} className={display} id>
+        <button onClick={() => addToCart(data)} className={display} >
           <strong>COMPRAR</strong>
         </button>
 
@@ -101,7 +102,7 @@ const CardProductos = ({ data, addToCart, addToFav }) => {
             color: "#ffff",
             textShadow: "4px 4px 6px #ffff",
             "&:hover": {
-              color: "#17b978",
+              color: "#a98f3b",
             },
           }}
         >
@@ -178,7 +179,7 @@ const CardProductos = ({ data, addToCart, addToFav }) => {
               >
                 <strong>Precio:</strong> {price}
               </Typography>
-           
+
             </CardContent>
           </Modal.Body>
 
@@ -187,7 +188,7 @@ const CardProductos = ({ data, addToCart, addToFav }) => {
               Cerrar
             </Button>
             <Button
-              style={{ backgroundColor: "#17b978" }}
+              style={{ backgroundColor: "#a98f3b" }}
               onClick={() => addToCart(data)}
             >
               Añadir al Carrito

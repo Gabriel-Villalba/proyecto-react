@@ -1,7 +1,7 @@
 .alice-carousel {
   background-color: black;
   padding: 10px;
-  height: 460px;
+  height: 400px;
 }
 
 .alice-carousel__prev-btn {
@@ -26,7 +26,7 @@
 }
 .alice-carousel__prev-btn-item:hover,
 .alice-carousel__next-btn-item:hover {
-  background-color: greenyellow;
+  background-color: #CD6155 ;
   color: black;
 }
 
@@ -36,7 +36,7 @@
 }
 .alice-carousel__dots-item:not(.__custom):hover,
 .alice-carousel__dots-item:not(.__custom).__active {
-  background-color: red;
+  background-color: #CD6155 ;
 }
 
 .alice-carousel__dots-item:not(.__custom) {
@@ -44,7 +44,7 @@
 }
 
 .alice-carousel__wrapper {
-  height: 380px;
+  height: 350px;
   /* margin-bottom: 50px; */
 }
 

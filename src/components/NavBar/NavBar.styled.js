@@ -4,9 +4,10 @@ export const StyledNavBar = styled.div`
   //caja contenedora
   display: flex;
   background-color: black;
+  justify-content: space-evenly;
 
   @media (max-width: 900px) {
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 `;
 // export const NavItems = styled.div`            //era el estilo de los links que luego los pase al comp Links.js
@@ -40,7 +41,7 @@ export const StyledLogo = styled.img`
   //logo
 
   object-fit: contain;
-  height: 92%;
-  margin-top: 5px;
+  height: 80%;
+  margin-top: 10px;
 
 `;
